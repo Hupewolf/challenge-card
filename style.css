@@ -16,10 +16,12 @@ body {
     align-items: center;
     flex-direction: column;
     padding: 3px;
+    border-radius: 8px;
 
     .container {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
         display: flex;
-        padding: 2px;
         align-items: center;
         width: 100%;
         height: 60px;
@@ -104,10 +106,69 @@ body {
         }
     }
     .foot {
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
         width: 100%;
         height: 25px;
         background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url(imgstudent/wolf.jpg);
         background-size: cover;
         background-position: 50% 75%;
+    }
+} 
+
+.productcard {
+    margin: 50px;
+    width: 340px;
+    height: 215px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+
+    .logo-box {
+        width: 300px;
+        display: flex;
+        justify-content: start;
+        .logo {
+            width: 60px;
+            height: 60px;
+        }
+    }
+    .context {
+        width: 300px;
+        display: flex;
+        gap: 10px;
+        
+        .product {
+            width: 140px;
+            height: 120px;
+        }
+        .text {
+            width: 150px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .title {
+                color: #FFC107;
+                font-weight: 700;
+            } 
+            .price {
+                color: #E53935;
+                font-weight: 700;
+            } 
+            .phone {
+                color: #333;
+                font-weight: 500;
+            }          
+        }
+    }
+    .foot {
+        width: 300px;
+        background-color: #ffa0a4;
+        color: #333;
+        font-weight: 500;
     }
 }    
